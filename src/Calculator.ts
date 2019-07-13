@@ -6,4 +6,8 @@ export default class Calculator {
     static Difference(a: number, b:number) : number {
         return a - b;
     }
+
+    static Multiply (a : number, b : number) : number {
+        return a * b;
+    }
 }
