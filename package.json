@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "test": "mocha -r ts-node/register tests/**/*.test.ts",
-    "testWithCoverage": "nyc -r lcov -e .ts -x \"*.test.ts\" mocha -r ts-node/register tests/**/*.test.ts && nyc report"
+    "testWithCoverage": "nyc -r lcov -e .ts -x \"*.test.ts\" mocha -r ts-node/register tests/**/*.test.ts && nyc report", 
+    "report-coverage" : "nyc -r lcov -e .ts -x \"*.test.ts\" mocha -r ts-node/register tests/**/*.test.ts && nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",

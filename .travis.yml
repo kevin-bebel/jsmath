@@ -1,0 +1,13 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+  - node_modules
+before_install:
+- npm update
+- npm install -g codecov
+install:
+- npm install
+script:
+- npm test
+- npm run testWithCoverage
