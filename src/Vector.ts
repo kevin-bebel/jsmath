@@ -7,7 +7,7 @@ export default class Vector {
     }
 
     public sum() : number {
-        return this._vector.reduce(( a , b )=>  a + b + 1  );
+        return this._vector.reduce(( a , b )=>  a + b );
     }
 
     public size() : number {
